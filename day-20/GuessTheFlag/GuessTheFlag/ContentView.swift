@@ -10,27 +10,52 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-//        LinearGradient(colors: [.white, .black], startPoint: .top, endPoint: .bottom)
+        // cara 1
+//        Button("Delete selection") {
+//            print("Now deleting...")
+//        }
         
-//        LinearGradient(stops: [
-//            Gradient.Stop(color: .white, location: 0.45),
-//            Gradient.Stop(color: .black, location: 0.55)
-//        ], startPoint: .top, endPoint: .bottom)
+        // cara 2
+//        Button("Deleting selection", role: .destructive, action: executeDelete)
         
-//        LinearGradient(stops: [
-//            .init(color: .white, location: 0.45),
-//            .init(color: .black, location: 0.55),
-//        ], startPoint: .top, endPoint: .bottom)
+//        VStack {
+//            Button("Button 1"){}
+//                .buttonStyle(.bordered)
+//            
+//            Button("Button 2", role: .destructive){}
+//                .buttonStyle(.bordered)
+//            
+//            Button("Button 3"){}
+//                .buttonStyle(.borderedProminent)
+//                .tint(.indigo)
+//            
+//            Button("Button 4", role: .destructive){}
+//                .buttonStyle(.borderedProminent)
+//        }
         
-//        RadialGradient(colors: [.blue, .black], center: .center, startRadius: 20, endRadius: 200)
+        // custom button style
+        Button {
+            print("Button was tapped")
+        } label: {
+            //            Text("Tap me!")
+            //                .padding()
+            //                .foregroundStyle(.white)
+            //                .background(.red)
+            
+            Label("Edit", systemImage: "pencil")
+                .padding()
+                .foregroundStyle(.white)
+                .background(.red)
+        }
         
-//        AngularGradient(colors: [.red, .yellow, .green, .blue, .purple, .red], center: .center)
+//        Image(systemName: "pencil.circle")
+//            .foregroundStyle(.red)
+//            .font(.largeTitle)
         
-        Text("Your content")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .foregroundStyle(.white)
-            .background(.red.gradient)
-        
+    }
+    
+    func executeDelete() {
+        print("Now deleting...")
     }
 }
 
