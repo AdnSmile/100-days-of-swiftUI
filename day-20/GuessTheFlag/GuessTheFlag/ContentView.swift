@@ -109,6 +109,8 @@ struct ContentView: View {
         }
     }
     
+    //
+    
     func reset() {
         isFinalRound = false
         gameLevel = 0
