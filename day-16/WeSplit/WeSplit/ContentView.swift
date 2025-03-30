@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     
     @State private var checkAmount = 0.0
@@ -70,6 +72,7 @@ struct ContentView: View {
                 
                 Section("Total amount") {
                     Text(totalAnount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .foregroundStyle(tipPercentage==0 ? .red : .black)
                 }
                 
                 Section("Amount per person") {
