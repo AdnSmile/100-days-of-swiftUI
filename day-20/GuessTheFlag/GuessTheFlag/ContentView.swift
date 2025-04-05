@@ -42,6 +42,9 @@ struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Spain", "UK", "Ukraine", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     
+    @State private var animationAmount = [0.0, 0.0, 0.0]
+    @State private var selectedButtonIndex: Int?
+    
     var body: some View {
         
         ZStack {
@@ -73,10 +76,23 @@ struct ContentView: View {
                     
                     ForEach(0..<3) { number in
                         Button {
-                            flagTapped(number)
+                            withAnimation {
+                                selectedButtonIndex = number
+                                animationAmount[number] += 360
+                                flagTapped(number)
+                            }
                         } label: {
                             FlagImage(imageName: countries[number])
                         }
+                        .rotation3DEffect(
+                            .degrees(animationAmount[number]),
+                            axis: (x: 0, y: 1, z: 0)
+                        )
+                        .rotation3DEffect(
+                            .degrees((selectedButtonIndex == nil || selectedButtonIndex == number) ? 0 : 360),
+                            axis: (x: 1, y: 0, z: 0)
+                        )
+                        .opacity((selectedButtonIndex == nil || selectedButtonIndex == number) ? 1 : 0.25)
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -122,6 +138,7 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        selectedButtonIndex = nil
         checkFinalRound()
     }
     
