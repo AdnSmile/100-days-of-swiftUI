@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		CC3BD96B2D9EA2E1001501BC /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC54E502DA15A6700E9E014 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CC3BD96D2D9EA2E1001501BC /* WordScramble */ = {
+		CCC54E522DA15A6700E9E014 /* Animations */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WordScramble;
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC3BD9682D9EA2E1001501BC /* Frameworks */ = {
+		CCC54E4D2DA15A6700E9E014 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC3BD9622D9EA2E1001501BC = {
+		CCC54E472DA15A6700E9E014 = {
 			isa = PBXGroup;
 			children = (
-				CC3BD96D2D9EA2E1001501BC /* WordScramble */,
-				CC3BD96C2D9EA2E1001501BC /* Products */,
+				CCC54E522DA15A6700E9E014 /* Animations */,
+				CCC54E512DA15A6700E9E014 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CC3BD96C2D9EA2E1001501BC /* Products */ = {
+		CCC54E512DA15A6700E9E014 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC3BD96B2D9EA2E1001501BC /* WordScramble.app */,
+				CCC54E502DA15A6700E9E014 /* Animations.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC3BD96A2D9EA2E1001501BC /* WordScramble */ = {
+		CCC54E4F2DA15A6700E9E014 /* Animations */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC3BD9762D9EA2E2001501BC /* Build configuration list for PBXNativeTarget "WordScramble" */;
+			buildConfigurationList = CCC54E5B2DA15A6700E9E014 /* Build configuration list for PBXNativeTarget "Animations" */;
 			buildPhases = (
-				CC3BD9672D9EA2E1001501BC /* Sources */,
-				CC3BD9682D9EA2E1001501BC /* Frameworks */,
-				CC3BD9692D9EA2E1001501BC /* Resources */,
+				CCC54E4C2DA15A6700E9E014 /* Sources */,
+				CCC54E4D2DA15A6700E9E014 /* Frameworks */,
+				CCC54E4E2DA15A6700E9E014 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CC3BD96D2D9EA2E1001501BC /* WordScramble */,
+				CCC54E522DA15A6700E9E014 /* Animations */,
 			);
-			name = WordScramble;
+			name = Animations;
 			packageProductDependencies = (
 			);
-			productName = WordScramble;
-			productReference = CC3BD96B2D9EA2E1001501BC /* WordScramble.app */;
+			productName = Animations;
+			productReference = CCC54E502DA15A6700E9E014 /* Animations.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC3BD9632D9EA2E1001501BC /* Project object */ = {
+		CCC54E482DA15A6700E9E014 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					CC3BD96A2D9EA2E1001501BC = {
+					CCC54E4F2DA15A6700E9E014 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
 			};
-			buildConfigurationList = CC3BD9662D9EA2E1001501BC /* Build configuration list for PBXProject "WordScramble" */;
+			buildConfigurationList = CCC54E4B2DA15A6700E9E014 /* Build configuration list for PBXProject "Animations" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = CC3BD9622D9EA2E1001501BC;
+			mainGroup = CCC54E472DA15A6700E9E014;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = CC3BD96C2D9EA2E1001501BC /* Products */;
+			productRefGroup = CCC54E512DA15A6700E9E014 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC3BD96A2D9EA2E1001501BC /* WordScramble */,
+				CCC54E4F2DA15A6700E9E014 /* Animations */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CC3BD9692D9EA2E1001501BC /* Resources */ = {
+		CCC54E4E2DA15A6700E9E014 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CC3BD9672D9EA2E1001501BC /* Sources */ = {
+		CCC54E4C2DA15A6700E9E014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CC3BD9742D9EA2E2001501BC /* Debug */ = {
+		CCC54E592DA15A6700E9E014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		CC3BD9752D9EA2E2001501BC /* Release */ = {
+		CCC54E5A2DA15A6700E9E014 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +246,7 @@
 			};
 			name = Release;
 		};
-		CC3BD9772D9EA2E2001501BC /* Debug */ = {
+		CCC54E5C2DA15A6700E9E014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -261,13 +261,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.3.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vvwxx.learn.WordScramble;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vvwxx.learn.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -275,7 +274,7 @@
 			};
 			name = Debug;
 		};
-		CC3BD9782D9EA2E2001501BC /* Release */ = {
+		CCC54E5D2DA15A6700E9E014 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,13 +289,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.3.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vvwxx.learn.WordScramble;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vvwxx.learn.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -307,25 +305,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC3BD9662D9EA2E1001501BC /* Build configuration list for PBXProject "WordScramble" */ = {
+		CCC54E4B2DA15A6700E9E014 /* Build configuration list for PBXProject "Animations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC3BD9742D9EA2E2001501BC /* Debug */,
-				CC3BD9752D9EA2E2001501BC /* Release */,
+				CCC54E592DA15A6700E9E014 /* Debug */,
+				CCC54E5A2DA15A6700E9E014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC3BD9762D9EA2E2001501BC /* Build configuration list for PBXNativeTarget "WordScramble" */ = {
+		CCC54E5B2DA15A6700E9E014 /* Build configuration list for PBXNativeTarget "Animations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC3BD9772D9EA2E2001501BC /* Debug */,
-				CC3BD9782D9EA2E2001501BC /* Release */,
+				CCC54E5C2DA15A6700E9E014 /* Debug */,
+				CCC54E5D2DA15A6700E9E014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CC3BD9632D9EA2E1001501BC /* Project object */;
+	rootObject = CCC54E482DA15A6700E9E014 /* Project object */;
 }
