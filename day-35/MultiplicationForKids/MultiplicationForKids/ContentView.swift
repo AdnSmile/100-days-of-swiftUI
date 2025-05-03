@@ -26,13 +26,18 @@ struct ContentView: View {
                 }
                 
                 Section("Pick your difficulty") {
-                    Picker("Tip percentage", selection: $questionAmount) {
+                    Picker("Amount of question", selection: $questionAmount) {
                         ForEach(questionAmountList, id: \.self) {
                             Text($0, format: .number)
                         }
                     }
                     .pickerStyle(.palette)
                 }
+                
+                Button("Start Quiz") {
+                    
+                }
+                
             }
             .navigationTitle("Multiple Quizzes")
         }
