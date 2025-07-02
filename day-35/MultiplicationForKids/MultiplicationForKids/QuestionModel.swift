@@ -35,3 +35,8 @@ let questionsList: [QuestionModel] = {
     
     return questions
 }()
+
+func getRandomQuestion(_ index: Int, _ questionAmount: Int) -> [QuestionModel] {
+    let baseNumberList = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    return Array(questionsList.filter{ $0.baseNumber == baseNumberList[index] }.shuffled().prefix(questionAmount))
+}

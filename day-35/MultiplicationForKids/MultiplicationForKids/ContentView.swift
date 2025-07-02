@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedBaseNumber = 0
     @State private var questionAmount = 10
+    @State private var questions = []
+    
+    private let listQuestion = questionsList
     
     let questionAmountList = [5, 10, 15, 20]
     
@@ -35,7 +38,8 @@ struct ContentView: View {
                 }
                 
                 Button("Start Quiz") {
-                    
+                    questions = getRandomQuestion(selectedBaseNumber, questionAmount)
+                    print(questions)
                 }
                 
             }

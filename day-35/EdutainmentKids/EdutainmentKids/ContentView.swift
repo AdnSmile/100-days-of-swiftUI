@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  iExpense
+//  EdutainmentKids
 //
-//  Created by Nessa on 04/05/25.
+//  Created by Nessa on 01/07/25.
 //
 
 import SwiftUI
