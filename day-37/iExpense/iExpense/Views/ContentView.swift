@@ -14,19 +14,38 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(expenses.items) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.type)
+                Section("Personal") {
+                    ForEach(expenses.items.filter { $0.type == "Personal" }) { item in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            }
+                            
+                            Spacer()
+                            Text(item.amount, format: .currency(code: item.currency))
                         }
-                        
-                        Spacer()
-                        Text(item.amount, format: .currency(code: "IDR"))
                     }
+                    .onDelete(perform: deletePersonalItems)
                 }
-                .onDelete(perform: removeItems)
+                
+                Section("Business") {
+                    ForEach(expenses.items.filter { $0.type == "Business" }) { item in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            }
+                            
+                            Spacer()
+                            Text(item.amount, format: .currency(code: item.currency))
+                        }
+                    }
+                    .onDelete(perform: deleteBusinessItems)
+                }
+                
             }
             .navigationTitle("iExpense")
             .toolbar {
@@ -40,8 +59,24 @@ struct ContentView: View {
         }
     }
     
-    func removeItems(at offsets: IndexSet) {
-        expenses.items.remove(atOffsets: offsets)
+    func deletePersonalItems(offsets: IndexSet) {
+        let personalItems = expenses.items.filter { $0.type == "Personal" }
+        for offset in offsets {
+            let itemToDelete = personalItems[offset]
+            if let indexInOriginal = expenses.items.firstIndex(where: { $0.id == itemToDelete.id}) {
+                expenses.items.remove(at: indexInOriginal)
+            }
+        }
+    }
+    
+    func deleteBusinessItems(offsets: IndexSet) {
+        let businessItems = expenses.items.filter { $0.type == "Business" }
+        for offset in offsets {
+            let itemToDelete = businessItems[offset]
+            if let indexInOriginal = expenses.items.firstIndex(where: { $0.id == itemToDelete.id}) {
+                expenses.items.remove(at: indexInOriginal)
+            }
+        }
     }
 }
 
